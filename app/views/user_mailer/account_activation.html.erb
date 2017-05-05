@@ -1,0 +1,10 @@
+<h1>Sample App</h1>
+
+<p>Aloha <%= @user.name %>,</p>
+
+<p>
+Welcome to the Sample Alux´s App! Click on the link below to activate your account wey!!:
+</p>
+
+<center><%= link_to "Activate account", edit_account_activation_url(@user.activation_token,
+                                                    email: @user.email) %></center>
